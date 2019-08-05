@@ -1,0 +1,93 @@
+// This is a Simple World Definition Text!
+// Defines each polygon by defining each and every vertex
+
+WORLD "Simple A'r-Ci-O'oh's World!"
+{
+
+  SECTOR "Closed Room"
+    {
+       POLYGON "Roof 1"
+         {
+            VERTEX(-50,0,120);
+            VERTEX(50,0,120);
+            VERTEX(50,-20,0);
+            VERTEX(-50,-20,0);
+            TYPE(SOLID);
+            COLOR(15);
+         }
+       POLYGON "Roof 2"
+         {
+            VERTEX(-50,-20,0);
+            VERTEX(50,-20,0);
+            VERTEX(50,0,-120);
+            VERTEX(-50,0,-120);
+            TYPE(SOLID);
+            COLOR(2);
+         }
+       POLYGON "Floor"
+         {
+            VERTEX(-50,40,-120);
+            VERTEX(50,40,-120);
+            VERTEX(50,40,120);
+            VERTEX(-50,40,120);
+            TYPE(SOLID);
+            COLOR(3);
+         }
+       POLYGON "North Wall"
+         {
+            VERTEX(-50,40,120);
+            VERTEX(50,40,120);
+            VERTEX(50,0,120);
+            VERTEX(-50,0,120);
+            TYPE(SOLID);
+            COLOR(5);
+         }
+       POLYGON "East Lower Wall"
+         {
+            VERTEX(50,40,120);
+            VERTEX(50,40,-120);
+            VERTEX(50,0,-120);
+            VERTEX(50,0,120);
+            TYPE(SOLID);
+            COLOR(5);
+         }
+       POLYGON "East Upper Wall"
+         {
+            VERTEX(50,0,-120);
+            VERTEX(50,-20,0);
+            VERTEX(50,0,120);
+            TYPE(SOLID);
+            COLOR(6);
+         }
+       POLYGON "West Lower Wall"
+         {
+            VERTEX(-50,40,120);
+            VERTEX(-50,40,-120);
+            VERTEX(-50,0,-120);
+            VERTEX(-50,0,120);
+            TYPE(SOLID);
+            COLOR(7);
+         }
+       POLYGON "West Upper Wall"
+         {
+            VERTEX(-50,0,-120);
+            VERTEX(-50,-20,0);
+            VERTEX(-50,0,120);
+            TYPE(SOLID);
+            COLOR(8);
+         }
+       POLYGON "South Wall"
+         {
+            VERTEX(50,40,-120);
+            VERTEX(-50,40,-120);
+            VERTEX(-50,0,-120);
+            VERTEX(50,0,-120);
+            TYPE(SOLID);
+            COLOR(9);
+         }
+
+       CAMERA(0,25,0);           // This Means, Camera Starts in this Sector@ (0,25,0)
+    }
+
+
+}

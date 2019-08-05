@@ -1,0 +1,142 @@
+// This is a World Definition 
+// Defines each polygon by first defining each vertex and then
+// poly by defining vertex index order
+
+WORLD "Another Simple A'r-Ci-O'oh's World!"
+{
+
+  SECTOR "Closed Room"
+    {
+	// Vertex List
+	VERTEX(-50,0,520);	// 0
+	VERTEX(50,0,520);
+	VERTEX(50,0,-120);	// 2
+	VERTEX(-50,0,-120);	// 3
+	VERTEX(-50,40,520);	// 4
+	VERTEX(50,40,520);	// 5
+	VERTEX(50,40,-120);	// 6
+	VERTEX(-50,40,-120);
+	// For subdoor
+	VERTEX(-10,40,520);	// 8
+	VERTEX(10,40,520);	// 9
+	VERTEX(10,18,520);	// 10
+	VERTEX(-10,18,520);	// 11
+
+	POLYGON "Roof"
+	{
+		VERTICES(0,1,2,3);
+		TYPE(SOLID);
+		COLOR(1);    
+	}
+
+
+	POLYGON "Floor"
+	{
+		VERTICES(4,5,6,7);
+		TYPE(SOLID);
+		COLOR(2);
+	}
+
+	POLYGON "West"
+	{
+		VERTICES(4,0,3,7);
+		TYPE(SOLID);
+		COLOR(3);
+	}
+
+	POLYGON "East"
+	{
+		VERTICES(2,1,5,6);
+		TYPE(SOLID);
+		COLOR(4);
+	}
+
+	POLYGON "North"
+	{
+		VERTICES(0,1,5,4);
+		TYPE(SOLID);
+		COLOR(5);
+	}
+
+
+	POLYGON "North dOOR"
+	{
+		VERTICES(8,9,10,11);
+		TYPE(SOLID);
+		COLOR(6);
+	}
+
+
+	POLYGON "South"
+	{
+		VERTICES(2,3,7,6);
+		TYPE(SOLID);
+		COLOR(7);
+	}
+
+
+
+	
+	CAMERA(0,25,0);
+    }
+
+
+  SECTOR "Adjoint Closed Room"
+    {
+	// Vertex List
+	VERTEX(-50,0,1520);	// 0
+	VERTEX(50,0,1520);
+	VERTEX(50,0,520);	// 2
+	VERTEX(-50,0,520);	// 3
+	VERTEX(-50,40,1520);	// 4
+	VERTEX(50,40,1520);	// 5
+	VERTEX(50,40,520);	// 6
+	VERTEX(-50,40,520);
+
+	POLYGON "Roof 2"
+	{
+		VERTICES(0,1,2,3);
+		TYPE(SOLID);
+		COLOR(1);
+	}
+
+
+	POLYGON "Floor 2"
+	{
+		VERTICES(4,5,6,7);
+		TYPE(SOLID);
+		COLOR(2);
+	}
+
+	POLYGON "West 2"
+	{
+		VERTICES(4,0,3,7);
+		TYPE(SOLID);
+		COLOR(3);
+	}
+
+	POLYGON "East 2"
+	{
+		VERTICES(2,1,5,6);
+		TYPE(SOLID);
+		COLOR(4);
+	}
+
+	POLYGON "North 2"
+	{
+		VERTICES(0,1,5,4);
+		TYPE(SOLID);
+		COLOR(5);
+	}
+
+
+	POLYGON "South 2"
+	{
+		VERTICES(2,3,7,6);
+		TYPE(SOLID);
+		COLOR(6);
+	}
+
+    }
+
+}

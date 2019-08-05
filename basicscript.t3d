@@ -1,0 +1,81 @@
+// Basic Script
+// Simply Defines a Polygon and Moves it
+
+SCRIPT "Basic"
+{
+   // A simple Polygon for Entity Test
+   ENTITY Simple
+     {
+        // First define the entity's vertices(relative to origin)
+        VERTEX(-5,-5,5);
+        VERTEX(5,-5,5);
+        VERTEX(5,5,5);
+        VERTEX(-5,5,5);
+        VERTEX(-5,-5,-5);
+        VERTEX(5,-5,-5);
+        VERTEX(5,5,-5);
+        VERTEX(-5,5,-5);
+
+        // polygons that composes it
+        POLYGON "front"
+          {
+             VERTICES(0,1,2,3);
+             TYPE(SOLID);
+             COLOR(30);
+          }
+        POLYGON "back"
+          {
+             VERTICES(4,5,6,7);
+             TYPE(SOLID);
+             COLOR(29);
+          }
+
+        POLYGON "left"
+          {
+             VERTICES(0,3,7,4);
+             TYPE(SOLID);
+             COLOR(28);
+          }
+        POLYGON "right"
+          {
+             VERTICES(1,2,6,5);
+             TYPE(SOLID);
+             COLOR(28);
+          }
+
+        // where is its center located at start
+        CENTER(0,25,20);
+     }
+
+   // global variables used
+   VARS
+	{
+          REAL test;
+          VECTOR delta;
+	}
+
+  // initalization of global variables
+  INIT
+	{
+	  test=1.0;
+          delta(7,7,7);
+          Simple(0,25,0);
+	}
+
+
+  // function called each frame
+  MAIN
+	{
+                test=-test;
+                IF ((Simple.z>500) || (Simple.z<-100))
+                   delta.z=-1*delta.z;
+                IF ((Simple.x>40) || (Simple.x<-40))
+                   delta.x=-1*delta.x;
+                IF ((Simple.y>30) || (Simple.y<10))
+                   delta.y=-1*delta.y;
+	        Simple=Simple+delta;
+	}
+}
+
+
+

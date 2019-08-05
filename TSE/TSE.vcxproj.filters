@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Scanner">
+      <UniqueIdentifier>{89e81bdb-e15c-4815-b28e-15f2c52370d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptParser">
+      <UniqueIdentifier>{5013fabc-62e4-44b2-b952-a195d83c2e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VM">
+      <UniqueIdentifier>{6ad03920-d036-4da6-a00e-a9ccfabf903e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldParser">
+      <UniqueIdentifier>{8995cd99-855c-4e40-9324-d6e86e2f8001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{583ce543-8aa2-4996-9f7c-df22c994b20f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\trohs3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scanner\script.h">
+      <Filter>Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scanner\SCANNER.H">
+      <Filter>Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scanner\PRINT.H">
+      <Filter>Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scanner\tokens.h">
+      <Filter>Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\address.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\icode.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\proc_dir.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\quad.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\scriptparser.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\semantic.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScriptParser\stacks.h">
+      <Filter>ScriptParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VirtualMachine\virtualmachine.h">
+      <Filter>VM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WorldParser\worldparser.h">
+      <Filter>WorldParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\poly2d.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\polygon2d.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\polygon3d.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\polypool.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\polyset.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\sector.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\vector2d.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\vector3d.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\view.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\boundbox.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\camera.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\clipper.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\matrix.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scanner\script.cpp">
+      <Filter>Scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scanner\PRINT.CPP">
+      <Filter>Scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scanner\SCANNER.CPP">
+      <Filter>Scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\address.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\icode.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\proc_dir.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\quad.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\scriptparser.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\semantic.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScriptParser\stacks.cpp">
+      <Filter>ScriptParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VirtualMachine\virtualmachine.cpp">
+      <Filter>VM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WorldParser\worldparser.cpp">
+      <Filter>WorldParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\polygon2d.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\polygon3d.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\polyset.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\sector.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\view.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\camera.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\clipper.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\matrix.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\poly2d.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ScriptParser\entityparser.inl">
+      <Filter>ScriptParser</Filter>
+    </None>
+    <None Include="..\ScriptParser\initparser.inl">
+      <Filter>ScriptParser</Filter>
+    </None>
+    <None Include="..\ScriptParser\mathparser.inl">
+      <Filter>ScriptParser</Filter>
+    </None>
+    <None Include="..\ScriptParser\stmtparser.inl">
+      <Filter>ScriptParser</Filter>
+    </None>
+    <None Include="..\Engine\polyclip.inl">
+      <Filter>Engine</Filter>
+    </None>
+  </ItemGroup>
+</Project>

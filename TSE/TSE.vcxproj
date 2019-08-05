@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9B5558F1-D0AD-4E2C-B7CE-6CF7C59399A4}</ProjectGuid>
+    <RootNamespace>TSE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\console.h" />
+    <ClInclude Include="..\Engine\boundbox.h" />
+    <ClInclude Include="..\Engine\camera.h" />
+    <ClInclude Include="..\Engine\clipper.h" />
+    <ClInclude Include="..\Engine\matrix.h" />
+    <ClInclude Include="..\Engine\poly2d.h" />
+    <ClInclude Include="..\Engine\polygon2d.h" />
+    <ClInclude Include="..\Engine\polygon3d.h" />
+    <ClInclude Include="..\Engine\polypool.h" />
+    <ClInclude Include="..\Engine\polyset.h" />
+    <ClInclude Include="..\Engine\sector.h" />
+    <ClInclude Include="..\Engine\vector2d.h" />
+    <ClInclude Include="..\Engine\vector3d.h" />
+    <ClInclude Include="..\Engine\view.h" />
+    <ClInclude Include="..\entity.h" />
+    <ClInclude Include="..\Scanner\PRINT.H" />
+    <ClInclude Include="..\Scanner\SCANNER.H" />
+    <ClInclude Include="..\Scanner\script.h" />
+    <ClInclude Include="..\Scanner\tokens.h" />
+    <ClInclude Include="..\ScriptParser\address.h" />
+    <ClInclude Include="..\ScriptParser\icode.h" />
+    <ClInclude Include="..\ScriptParser\proc_dir.h" />
+    <ClInclude Include="..\ScriptParser\quad.h" />
+    <ClInclude Include="..\ScriptParser\scriptparser.h" />
+    <ClInclude Include="..\ScriptParser\semantic.h" />
+    <ClInclude Include="..\ScriptParser\stacks.h" />
+    <ClInclude Include="..\simple.h" />
+    <ClInclude Include="..\system.h" />
+    <ClInclude Include="..\trohs3d.h" />
+    <ClInclude Include="..\VirtualMachine\virtualmachine.h" />
+    <ClInclude Include="..\world.h" />
+    <ClInclude Include="..\WorldParser\worldparser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\console.cpp" />
+    <ClCompile Include="..\Engine\camera.cpp" />
+    <ClCompile Include="..\Engine\clipper.cpp" />
+    <ClCompile Include="..\Engine\matrix.cpp" />
+    <ClCompile Include="..\Engine\poly2d.cpp" />
+    <ClCompile Include="..\Engine\polygon2d.cpp" />
+    <ClCompile Include="..\Engine\polygon3d.cpp" />
+    <ClCompile Include="..\Engine\polyset.cpp" />
+    <ClCompile Include="..\Engine\sector.cpp" />
+    <ClCompile Include="..\Engine\view.cpp" />
+    <ClCompile Include="..\entity.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Scanner\PRINT.CPP" />
+    <ClCompile Include="..\Scanner\SCANNER.CPP" />
+    <ClCompile Include="..\Scanner\script.cpp" />
+    <ClCompile Include="..\ScriptParser\address.cpp" />
+    <ClCompile Include="..\ScriptParser\icode.cpp" />
+    <ClCompile Include="..\ScriptParser\proc_dir.cpp" />
+    <ClCompile Include="..\ScriptParser\quad.cpp" />
+    <ClCompile Include="..\ScriptParser\scriptparser.cpp" />
+    <ClCompile Include="..\ScriptParser\semantic.cpp" />
+    <ClCompile Include="..\ScriptParser\stacks.cpp" />
+    <ClCompile Include="..\simple.cpp" />
+    <ClCompile Include="..\system.cpp" />
+    <ClCompile Include="..\VirtualMachine\virtualmachine.cpp" />
+    <ClCompile Include="..\world.cpp" />
+    <ClCompile Include="..\WorldParser\worldparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Engine\polyclip.inl" />
+    <None Include="..\ScriptParser\entityparser.inl" />
+    <None Include="..\ScriptParser\initparser.inl" />
+    <None Include="..\ScriptParser\mathparser.inl" />
+    <None Include="..\ScriptParser\stmtparser.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

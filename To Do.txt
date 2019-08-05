@@ -1,0 +1,14 @@
+Script:
+	* Add Entity to Actual Symbol Table(Currently ignored!)
+	* Be able to operate on center of Entity
+	* Be able to draw/don't draw Entity(flag)
+	* Local Variables on Main
+	* Procedures & Functions!
+
+Engine:
+	* Draw Entity!
+	* Create the PolySet class and Sector and Entity derived
+	* Portals! Class or Flag!
+	* Hit Beams with Walls!
+	* Textures!
+
